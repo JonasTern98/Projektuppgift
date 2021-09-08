@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif, Helvetica,
+        sans-serif;
+}
+/*HOMEPAGE*/
+.nav-bar {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    margin-top: 30px;
+}
+.nav-bar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.nav-links1 a,
+.nav-links2 a {
+    text-decoration: none;
+    color: tomato;
+    margin: 0 10px;
+    font-size: 1.2em;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-weight: bold;
+}
+.nav-links1 a:hover,
+.nav-links2 a:hover {
+    border-bottom: 2px solid white;
+}
+#home-section {
+    position: relative;
+    width: 100%;
+}
+#home-section video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(7px);
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.overlay-text h1 {
+    font-size: 80px;
+    color: white;
+    font-family: "Hina Mincho", serif;
+    padding-bottom: 150px;
+}
+.overlay-text a {
+    border: 2px solid tomato;
+    text-decoration: none;
+    color: tomato;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.overlay-text a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+/*-------*/
+
+/*ABOUT US*/
+#about-section {
+    width: 100%;
+    height: 100vh;
+}
+.super-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 150px;
+}
+.card-container {
+    border: 1px solid black;
+    width: 16vw;
+    height: 60vh;
+    margin: 0 30px;
+}
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+}
+.card,
+.card img {
+    width: 16vw;
+    height: 30vh;
+}
+.card img {
+    object-fit: cover;
+}
+.text {
+    text-align: center;
+}
+.text h2 {
+    font-size: 35spx;
+    margin-bottom: 5px;
+}
+.text h3 {
+    font-size: 15px;
+    margin-top: 0;
+}
+.text p {
+    font-size: 15px;
+    margin-top: 0;
+    padding: 0 10px;
+}
+button {
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px 20px;
+}
+/*-------*/
