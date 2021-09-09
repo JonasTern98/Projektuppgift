@@ -109,13 +109,11 @@ body {
     width: 16vw;
     height: 30vh;
     border-radius: 5px;
-      
 }
 .card img {
     width: 99.5%;
     height: 100%;
     object-fit: cover;
-    
 }
 .text {
     text-align: center;
@@ -140,17 +138,16 @@ button {
 }
 /*-------*/
 
-
 /*----FEATURES SEKTION HÄR*/
-#services-section{
+#services-section {
     width: 100%;
     padding: 70px 0px;
 }
-.services-text{
+.services-text {
     text-align: center;
     padding-bottom: 70px;
 }
-.services-text p{
+.services-text p {
     margin: auto;
     font-size: 20px;
     color: tomato;
@@ -159,11 +156,11 @@ button {
     z-index: 1;
     display: inline-block;
 }
-.services-text p::after{
-    content: '';
+.services-text p::after {
+    content: "";
     width: 50px;
     height: 35px;
-    background: linear-gradient(tomato,white);
+    background: linear-gradient(tomato, white);
     position: absolute;
     top: -20px;
     left: 0;
@@ -172,10 +169,10 @@ button {
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
-.services-text h1{
+.services-text h1 {
     font-size: 50px;
 }
-.services-box{
+.services-box {
     width: 80%;
     margin: auto;
     display: flex;
@@ -183,28 +180,28 @@ button {
     align-items: center;
     text-align: center;
 }
-.services{
+.services {
     flex-basis: 50%;
 }
-.services-img{
+.services-img {
     flex-basis: 50%;
     margin: auto;
 }
-.services-img img{
+.services-img img {
     width: 70%;
 }
-.services h1{
+.services h1 {
     text-align: left;
     margin-bottom: 10px;
     font-weight: 100;
     color: tomato;
 }
-.services-desc{
+.services-desc {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
-.services-icon{
+.services-icon {
     width: 50px;
     height: 50px;
     font-size: 30px;
@@ -213,25 +210,26 @@ button {
     color: tomato;
     border: 1px solid tomato;
 }
-.service-text p{
+.service-text p {
     padding: 0 20px;
     text-align: initial;
 }
 /*----work we offer*/
 
-#work-section{
+#work-section {
     width: 100%;
     padding: 70px 0;
+
     background: #d6d3d3;
 }
-.services-box{
+.services-box {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
 }
-.single-services{
+.single-services {
     flex-basis: 48%;
     text-align: center;
     border-radius: 7px;
@@ -239,26 +237,25 @@ button {
     color: white;
     position: relative;
 }
-.single-services img{
+.single-services img {
     width: 100%;
     border-radius: 7px;
 }
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     border-radius: 7px;
     cursor: pointer;
-    background: linear-gradient(rgba(0,0,0,0.2),tomato);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), tomato);
     opacity: 0;
     transition: 1s;
-
 }
-.single-services:hover .overlay{
+.single-services:hover .overlay {
     opacity: 1;
 }
-.work-desc{
+.work-desc {
     width: 80%;
     position: absolute;
     bottom: 0%;
@@ -267,17 +264,72 @@ button {
     transform: translateX(-50%);
     transition: 1s;
 }
-hr{
+hr {
     background: white;
     height: 2px;
     border: 0;
-    margin:15px auto;
+    margin: 15px auto;
     width: 60%;
 }
-.work-desc p{
+.work-desc p {
     font-size: 14px;
 }
-.single-services:hover .work-desc{
+.single-services:hover .work-desc {
     bottom: 40%;
     opacity: 1;
+}
+/*Footer-section*/
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: row;
+}
+.footer-logo {
+    width: 40%;
+}
+.footer-logo img {
+    width: 300px;
+    height: 280px;
+    margin-left: 200px;
+}
+.footer-nav {
+    width: 20%;
+}
+.footer-nav h2,
+.footer-contact h2,
+.footer-social h2 {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.footer-nav ul a,
+.footer-contact ul a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: left;
+    list-style: none;
+}
+.footer-contact {
+    width: 20%;
+}
+.footer-social {
+    width: 20%;
+}
+.footer-social ul a {
+    text-decoration: none;
+    font-size: 2.5em;
+    margin: 10px;
+    color: black;
+}
+.social-1,
+.social-2 {
+    margin-bottom: 15px;
+}
+footer a:hover {
+    color: tomato;
 }
