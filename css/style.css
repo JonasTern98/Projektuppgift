@@ -135,6 +135,7 @@ body {
 }
 .typing-animation {
     animation: homepage-typing 2s steps(14);
+    animation-fill-mode: forwards;
     overflow: hidden;
     text-align: left;
     white-space: nowrap;
@@ -688,9 +689,12 @@ footer hr {
         width: 0ch;
         border-right: 4px solid white;
     }
-    100% {
+    99% {
         width: 14ch;
         border-right: 4px solid white;
+    }
+    100% {
+        border: 0px;
     }
 }
 /*----------*/
