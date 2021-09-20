@@ -13,6 +13,52 @@ body {
     font-family: "Open Sans", Arial, Helvetica, sans-serif, Helvetica,
         sans-serif;
 }
+/*Burger menu fix*/
+.nav-bar2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 3;
+    margin-top: 30px;
+    display: none;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-bar2 img {
+    display: flex;
+    align-items: flex-start;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.menu-icon{
+    font-size: 85px;
+    color: tomato;
+    cursor: pointer;
+    display: none;
+    
+}
+
+
+
+/*Burger menu fix end*/
+
 /*NAV-BAR*/
 .nav-bar {
     color: white;
@@ -55,7 +101,6 @@ body {
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    filter: blur(4px);
 }
 .overlay-text {
     position: absolute;
@@ -96,6 +141,7 @@ body {
     border-right: 5px solid white;
     width: 14ch;
 }
+
 /*-------*/
 
 /*Services*/
@@ -106,17 +152,16 @@ body {
     background-color: burlywood;
 }
 .service-image-container {
-    width: 115%;
+    width: 50%;
     overflow: hidden;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
 }
 .service-text-container {
     background-color: #deb887;
-    width: 100%;
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
@@ -124,13 +169,13 @@ body {
 }
 .service-text-container h2 {
     font-family: "Hina Mincho", serif;
-    font-size: 8rem;
+    font-size: 75px;
     margin-bottom: 10px;
     z-index: 2;
 }
 .service-text-container table {
     border-collapse: collapse;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 .service-text-container td {
     text-align: left;
@@ -144,7 +189,7 @@ body {
 #service-section a {
     text-decoration: none;
     color: tomato;
-    font-size: 2.5rem;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -154,18 +199,75 @@ body {
 #service-section a:hover {
     margin-left: 20px;
 }
+
 .service-animated-razor img {
     width: 200px;
     height: 200px;
+    display: flex;
     position: absolute;
     z-index: 1;
-    top: 1px;
+    top: 0px;
     left: 600px;
     animation-name: straight-razor-shake;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
+
+/*--- Service media query starts here*/
+@media screen and (max-width:800px) {
+    #service-section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        background-color: burlywood;
+    }
+    .service-text-container h2 {
+        font-family: "Hina Mincho", serif;
+        font-size: 45px;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+    }
+    .service-text-container {
+        background-color: #deb887;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        position: relative;
+        text-align: center;
+    }
+    .service-image-container {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .service-image-container img{
+        width: 100%;
+        height: auto;
+    }
+    .service-animated-razor img {
+        width: 50px;
+        height: 50px;
+        left: 110%;
+    }
+    .service-text-container table {
+        margin-bottom: 18%;
+    }
+
+}
+/*--- Service media query starts here*/
 /*-------*/
+
+
+/*---ABOOUT SECTION STARTS HERE----*/
 
 #about-section {
     width: 98vw;
@@ -183,8 +285,9 @@ body {
 }
 .card-container {
     width: 300px;
-    height: 60vh;
+    height: auto;
     margin: 2%;
+    padding-bottom: 5px;
     margin-top: 10%;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -199,7 +302,7 @@ body {
 }
 .card-image {
     width: 300px;
-    height: 25vh;
+    height: 26vh;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -295,9 +398,36 @@ body {
 .about-animated-tool img:hover {
     transform: scale(1.5);
 }
-/*-------*/
+/*--- ABOUT SECTION ENDS HERE ---*/
 
-/*Footer-section*/
+/*---- about section MEDIA query STARTS here ----*/
+
+@media screen and (max-width:800px) {
+    
+    #about-section {
+        width: 100%;
+        height: auto;
+    }
+    .super-card-container {
+        display: block;
+        z-index: 2;
+    }
+    .card-container {
+        width: 300px;
+        height: auto;
+        padding-bottom: 5px;
+    }
+    .card-image {
+        width: 350px;
+        height: 50vh;
+    }
+
+}
+
+
+/*---- about section MEDIA query ENDS here ----*/
+
+/*--- Footer-section STARTS HERE ---*/
 footer {
     width: 100%;
     height: 25%;
@@ -363,7 +493,35 @@ footer hr {
     margin-right: 300px;
     margin-top: 5px;
 }
-/*---------*/
+/*--- Footer-section MEDIA QUERY STARTS HERE ---*/
+
+@media screen and (max-width: 800px) {
+
+    #contact-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        
+        
+    }
+    #contact-section h2{
+        font-size: 12px;
+    }
+    #contact-section a{
+        font-size: 15px;
+    }
+    .footer-logo {
+        display: none;
+    }
+    #contact-section ul{
+     padding-left: 50%;
+    }
+}
+
+/*--- Footer-section MEDIA QUERY ENDS HERE ---*/
 
 /*----OurServices-Section*/
 #services-section {
@@ -536,3 +694,48 @@ footer hr {
     }
 }
 /*----------*/
+/*-------burger menu media query här-----*/
+@media screen and (max-width: 800px){
+    .overlay-text h1 {
+        font-size: 45px;
+    }
+    .overlay-text a{
+        font-size: 18px;
+    }
+    .nav-bar{
+        
+        display: none;
+    }
+    .nav-bar2{
+        
+        display: flex;
+        margin-top:10px;
+        z-index: 3;
+    }
+    .nav-links ul{
+        width: 50%;
+        background: linear-gradient(90deg, rgba(228,158,74,0.5) 34%, rgba(183,168,114,0.5) 67%);
+        position:absolute;
+        top: 75px;
+        right: 0px;
+        z-index: 2;
+    }
+    #menuList{
+        padding: 0;
+    }
+    .nav-links ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    .nav-links ul li a{
+        color: white;
+        font-size: 20px;
+        font-family: "Hina Mincho", serif;
+    }
+    .menu-icon{
+        display: block;}
+ 
+}
+/*-------burger menu media query här---slut--*/

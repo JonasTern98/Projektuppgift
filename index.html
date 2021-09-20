@@ -29,26 +29,42 @@
                 <a href="#contact-section">Contact</a>
             </nav>
         </header>
+        <!--Burger header-->
+        <header class="nav-bar2">
+            <img src="media/images/logotype.jpg" alt="" />
+            <div class="nav-links">
+                <ul id="menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#service-section">Services</a></li>
+                <li><a href="#about-section">About Us</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" >
+                <i class="fa fa-bars" onclick="togglemenu()"></i>
+            </div>
+        </header>
+        <!--Burger header end -->
         <section id="home-section">
-            <video width="500" autoplay muted loop>
+            <video width="500" height="auto" autoplay muted loop>
                 <source src="media/videos/overlay.mp4" type="video/mp4" />
                 Video not supported.
             </video>
             <div class="overlay-text">
                 <h1 class="typing-animation">SHAVES & TRIMS</h1>
-                <a href="#">BOOK AN APPOINTMENT</a>
+                <a href="#about-section">BOOK AN APPOINTMENT</a>
             </div>
         </section>
         <!---Service-Section--->
         <section id="service-section">
             <div class="service-image-container">
-                <img src="/media/images/tools.jpg" alt="A chair" />
+                <img src="media/images/tools.jpg" alt="A chair" />
             </div>
             <div class="service-text-container">
                 <h2>SERVICES</h2>
                 <span class="service-animated-razor">
                     <img
-                        src="/media/images/straight-razor.png"
+                        src="media/images/straight-razor.png"
                         alt="Animated straight razor"
                     />
                 </span>
@@ -98,17 +114,17 @@
             <span class="about-background-images">
                 <span class="about-animated-scissor"
                     ><img
-                        src="/media/images/scissor.png"
+                        src="media/images/scissor.png"
                         alt="Animated scissor."
                 /></span>
                 <span class="about-animated-dotted-line-1"
                     ><img
-                        src="/media/images/Scissorline1.png"
+                        src="media/images/Scissorline1.png"
                         alt="Scissor line."
                 /></span>
                 <span class="about-animated-dotted-line-2"
                     ><img
-                        src="/media/images/Scissorline1.png"
+                        src="media/images/Scissorline1.png"
                         alt="Scissor line."
                 /></span>
             </span>
@@ -243,5 +259,20 @@
                 </ul>
             </div>
         </footer>
+        <!--Toggle menu script här-->
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxWidth = "0px";
+            function togglemenu(){
+
+                if(menuList.style.maxWidth == "0px"){
+                    menuList.style.maxWidth = "150px"
+                }
+                else{
+                    menuList.style.maxWidth = "0px"
+                }
+
+            }
+        </script>
     </body>
 </html>
