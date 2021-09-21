@@ -340,7 +340,7 @@ body {
 
 #about-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -415,6 +415,7 @@ body {
 .about-footer {
     z-index: 2;
     margin-top: 1%;
+    margin-bottom: 50px;
 }
 .about-footer a {
     text-decoration: none;
@@ -558,6 +559,12 @@ body {
 /*---- about section MEDIA query ENDS here ----*/
 
 /*--- Footer-section STARTS HERE ---*/
+#contact-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+}
 footer {
     width: 100%;
     height: 25%;
@@ -653,7 +660,7 @@ footer hr {
         padding-top: 0;
     }
     .footer-nav hr {
-        margin-right: 100%;
+        margin-right: 70%;
     }
     .footer-nav ul {
         display: flex;
@@ -687,7 +694,7 @@ footer hr {
         padding-top: 0;
     }
     .footer-contact hr {
-        margin-right: 70px;
+        margin-right: 70%;
     }
     .footer-contact-icons i {
         display: flex;
@@ -709,7 +716,7 @@ footer hr {
         padding-top: 0;
     }
     .footer-social hr {
-        margin-right: 80px;
+        margin-right: 70%;
     }
     .footer-social ul {
         display: flex;
