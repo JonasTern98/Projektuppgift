@@ -161,29 +161,34 @@ body {
     justify-content: center;
     align-items: center;
 }
+.service-image-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 .service-text-container {
     background-color: #deb887;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3%;
     position: relative;
 }
 .service-text-container h2 {
     font-family: "Hina Mincho", serif;
-    font-size: 75px;
+    font-size: 6rem;
     margin-bottom: 10px;
     z-index: 2;
 }
 .service-text-container table {
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 .service-text-container td {
     text-align: left;
     padding: 10px 50px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: "Hina Mincho", serif;
 }
 .service-text-container tr:nth-child(even) {
@@ -209,8 +214,8 @@ body {
     display: flex;
     position: absolute;
     z-index: 1;
-    top: 0px;
-    left: 600px;
+    top:0%;
+    right: 6%;
     animation-name: straight-razor-shake;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -229,7 +234,7 @@ body {
     }
     .service-text-container h2 {
         font-family: "Hina Mincho", serif;
-        font-size: 45px;
+        font-size: 4.5rem;
         margin: 0;
         padding: 0;
         z-index: 2;
@@ -273,7 +278,7 @@ body {
 /*---ABOOUT SECTION STARTS HERE----*/
 
 #about-section {
-    width: 98vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     display: flex;
@@ -285,13 +290,16 @@ body {
 }
 .super-card-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5%;
 }
 .card-container {
-    width: 300px;
-    height: auto;
+    width: 18%;
+    height: 90%;
     margin: 2%;
     padding-bottom: 5px;
-    margin-top: 10%;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background-color: white;
@@ -304,8 +312,8 @@ body {
     transform: scale(1.02);
 }
 .card-image {
-    width: 300px;
-    height: 26vh;
+    width: 100%;
+    height: 23vh;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -313,7 +321,6 @@ body {
 }
 .card-image-brian {
     transform: scale(1.3);
-    margin-right: 40px;
 }
 .card-image-mark {
     transform: scale(1.5);
@@ -352,8 +359,8 @@ body {
     font-weight: bold;
 }
 .about-footer {
-    margin-top: 50px;
     z-index: 2;
+    margin-top: 2%;
 }
 .about-footer a {
     text-decoration: none;
@@ -374,28 +381,27 @@ body {
     transform: scale(1.05);
 }
 .about-animated-scissor img {
-    width: 200px;
-    height: 200px;
+    width: 15%;
+    height: auto;
     position: absolute;
     z-index: 1;
-    right: 20px;
-    top: 120px;
-    transform: scale(1.4);
+    right: 1%;
+    top: 3%;
 }
 .about-animated-dotted-line-1 img {
-    width: 1000px;
-    height: 1000px;
+    width: 40%;
+    height: auto;
     position: absolute;
-    right: 210px;
-    top: 40px;
+    right: 13.5%;
+    top: 6%;
     z-index: 1;
 }
 .about-animated-dotted-line-2 img {
-    width: 1000px;
-    height: 1000px;
+    width: 42%;
+    height: auto;
     position: absolute;
-    left: -300px;
-    top: 100px;
+    right:59%;
+    top: 20%;
     z-index: 1;
 }
 .about-animated-tool img:hover {
