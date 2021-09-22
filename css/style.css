@@ -98,9 +98,6 @@ body {
 }
 /*Burger menu fix end*/
 
-
-
-
 /*-------burger menu media query här-----*/
 @media screen and (max-width: 800px){
     .overlay-text h1 {
@@ -147,6 +144,8 @@ body {
 
 }
 /*-------burger menu media query här---slut--*/
+
+
 /*HOMEPAGE*/
 #home-section {
     position: relative;
@@ -157,6 +156,7 @@ body {
     height: 100vh;
     object-fit: cover;
     display: block;
+    outline: none;
 }
 .overlay-text {
     position: absolute;
@@ -199,9 +199,20 @@ body {
     border-right: 5px solid white;
     width: 14ch;
 }
+/*---- Home section ends here  ----*/
+/*---- HOME MEDIA QUERY STARTS HERE ----*/
+@media screen and (max-width: 800px) {
+    .overlay-text h1{
+        font-size: 4.5rem;
+    }
+    .overlay-text a {
+        font-size: 2rem;
+    }
+}
+
+/*---- HOME MEDIA QUERY STARTS HERE ----*/
 
 
-/*-------*/
 
 /*Services*/
 #service-section {
@@ -359,10 +370,10 @@ body {
     margin-top: 5%;
 }
 .card-container {
-    width: 18%;
+    width: 16%;
     height: 90%;
     margin: 2%;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     background-color: white;
