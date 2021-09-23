@@ -1,5 +1,5 @@
 const header = document.querySelector(".nav-bar");  //classnamnet (eller id-namnet beroende av vad ni satt i html:en) på er navbar
-const target = document.querySelector("#contact-section"); //classnamnet (eller id-namnet beroende av vad ni satt i html:en) på det element som kommer trigga style-ändringen när man scrollar till det
+const target = document.querySelector("#about-section"); //classnamnet (eller id-namnet beroende av vad ni satt i html:en) på det element som kommer trigga style-ändringen när man scrollar till det
 
 window.addEventListener("load", function () {
   document.addEventListener("scroll", () => {
